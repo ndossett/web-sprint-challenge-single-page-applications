@@ -69,6 +69,11 @@ export function Pizza() {
     return (
         <form className='form container' onSubmit={onSubmit}>
             <div className='form-group submit'>
+                <nav>
+                    <ul>
+                        <a href='/'>Home</a>
+                    </ul>
+                </nav>
                 <h2>Build Your Own Pizza</h2>
                 <div className='errors'>
                     <div>{errors.name}</div>
