@@ -1,10 +1,31 @@
 import React from "react";
+import './App.css';
+import Form from './Pizza'
 
 const App = () => {
   return (
     <>
-      <h1>Lambda Eats</h1>
-      <p>You can remove this code and create your own header</p>
+    <header className="App-header">
+      <div>
+        <h1>Lambda Eats</h1>
+      </div>
+      <nav>
+        <ul>
+          <a href='/'>Home</a>
+          <a href='#'>Help</a>
+        </ul>
+      </nav>
+    </header>
+    <div className='App-eats'>
+      <h2>Your favorite food, delivered while coding</h2>
+      <button
+        type='button'
+        onClick={(evt) =>{
+          evt.preventDefault()
+          window.location.href='./Pizza.js'
+        }}
+        >Pizza?</button>
+    </div>
     </>
   );
 };
